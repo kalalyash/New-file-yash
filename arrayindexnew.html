@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array New Methods</h1>
+    <script>
+     const arr = [44,34,21,2,41,10,40,45];
+
+     function checking(){
+        //console.log(n);
+       // var n=30;
+       for(var i = 0 ; i < arr.length ; i++){
+        console.log("check : " + arr[i] )
+        return arr[i] > 10;
+       }
+     }
+
+     const flag = arr.every(checking);
+     console.log(flag);
+     const arr01 = arr.fill(5,3,4);
+     console.log(arr01);
+
+     const arr02 = arr.filter((x)=> x > 10); 
+     console.log(arr02);
+     console.log("=====================================");
+     const n = arr.find((x)=>x > 21);
+     console.log(n);
+     const isCheck = (k)=>k==40;
+     const n1 = arr.findIndex(isCheck);
+     console.log(n1);
+    //  arr.forEach
+    //  arr.indexOf
+    //  arr.lastIndexOf
+    //  arr.reduce
+    //  arr.reverse
+    //  arr.sort
+    //  arr.splice
+    //  arr.flat
+    //  arr.flatMap
+    //  arr.reduceRight
+    //  arr.values
+    </script>
+</body>
+</html>

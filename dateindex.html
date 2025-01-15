@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const currentMilliSeconds = new Date(); 
+         console.log(currentMilliSeconds);
+         console.log(currentMilliSeconds.toString()); 
+         console.log(currentMilliSeconds.valueOf());
+         console.log();
+         const pointInTime_1 = new Date(1000);
+         console.log(pointInTime_1); 
+         const pointInTime_2 = new Date(2021, 11, 31, 23, 59);
+         console.log(pointInTime_2);
+         const date1 = Date.now();
+         console.log(date1);
+         console.log(new Date(1734322687676));
+         console.log("=======================================");
+         console.log(currentMilliSeconds.toISOString());
+         console.log(currentMilliSeconds.getFullYear());
+         console.log(currentMilliSeconds.getMonth());
+         console.log(currentMilliSeconds.getDate());
+         console.log(currentMilliSeconds.getDay());
+         const setDate = currentMilliSeconds.setDate(2);
+         console.log(new Date(setDate));
+
+         console.log("======================================");
+
+         const dateAsInteger_1 = new Date().valueOf();
+         console.log(dateAsInteger_1);
+         console.log(new Date(dateAsInteger_1));
+         const dateAsInteger_2 = +new Date();
+         console.log(new Date(dateAsInteger_2));
+    </script>
+</body>
+</html>
